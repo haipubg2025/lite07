@@ -1562,7 +1562,7 @@ Hành động tiếp theo của người chơi: ${userAction}`;
                               onChange={(e) =>
                                 setEditingContent(e.target.value)
                               }
-                              className="w-full h-80 theme-input border-transparent rounded-xl p-4 text-base md:text-lg text-white/90 outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400/50 resize-y custom-scrollbar leading-loose"
+                              className={`w-full h-80 rounded-xl border p-4 text-base md:text-lg outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400/50 resize-y custom-scrollbar leading-loose transition-colors ${theme.group === "Dark" ? "bg-black/40 border-white/10 text-white/90" : "bg-[#FDFBF7] border-amber-200/60 text-[#2C1D11]"}`}
                             />
                           ) : (
                             (turn.aiMsg.mainText || turn.aiMsg.content) && (
